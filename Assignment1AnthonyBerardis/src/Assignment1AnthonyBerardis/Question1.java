@@ -6,6 +6,7 @@ public class Question1 {
 		// TODO Auto-generated method stub
 		int intArray[]; // declaring array
 		intArray = new int[10]; // creates spaces for array
+		int count=0;
 
 		// initializes first element
 		intArray[0] = 17;
@@ -23,7 +24,11 @@ public class Question1 {
 		intArray[7] = -1;
 		intArray[8] = -1;
 
-		
+		for (int i: intArray){
+		     intArray[count] = i+1;
+			Question1.writeOutLine(intArray[count]);
+		     count++;
+		}
 		
 		
 		// Prints each line of array on separate lines
@@ -37,6 +42,20 @@ public class Question1 {
 		System.out.println(intArray[7]);
 		System.out.println(intArray[8]);
 		System.out.println(intArray[9]);
+		
+		if (intArray.length >= 1) {
+		    System.out.print(intArray[0]);
+		}
+
+		// prints each element seperated by a comma
+		for (int i = 1; i < intArray.length; i++) { 
+		     System.out.print("," + intArray[i]);
+		}
+	}
+
+	private static void writeOutLine(int i) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
